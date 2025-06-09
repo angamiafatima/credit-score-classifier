@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: credit-score-gradio-app
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
